@@ -1,1 +1,10 @@
+# nodes
+node_modules/
+package-lock.json
+# Environment & Sensitive configs
 .env
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  },
+  "name": "qed",
+  "version": "1.0.0",
+  "description": "why does it named like that? this is the name I come up when making the project",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./global.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./global.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qwidio/QED.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Qwidio/QED/issues"
+  },
+  "homepage": "https://github.com/Qwidio/QED#readme"
+}
