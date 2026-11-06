@@ -37,3 +37,32 @@ accepts `.js` and `.mjs` files.
 Added two short rewrite rules in [`.htaccess`](https://github.com/Qwidio/QED/blob/main/.htaccess) so that even if someone types `/qed/public/shell.php` or `/qed/script/test.php` directly into the browser bar, Apache blocks it with a `403 Forbidden` unless it's an allowed image or `.js` file.
 ### Updated `documentation.md`: 
 Added the new `public_asset()` and `script_asset()` helpers and `.htaccess` rules into the main documentation so everything stays in sync.
+
+## 6/11/26 - tailwinded
+Since the other old time I like to style pages with tailwinds like styling but unlike tailwind, I made the classnames myself which is also inefficient use of time. that's why when finding out tailwind exists I've been wanting to use it on all my projects and now I did, it's never been more easier for me to style pages as much as I liked :D
+
+### installed tailwinds with nodejs
+Like been said before, I've also enable the tailwinds syntax highlighting with this `.vscode/settings.json` setup:
+```json
+{
+  "tailwindCSS.includeLanguages": {
+    "php": "html"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "files.associations": {
+    "*.php": "php"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on",
+    "other": "on",
+    "comments": "off"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "class=[\"'`]([^\"'`]*?)[\"'`]"
+  ]
+}
+```
+either copypaste it directly or update your settings.json with this if you want to enable it 
+
+### updated docs
+well yeah ofcourse it needs to be updated, I've also include some of the guide on the readme because why not
