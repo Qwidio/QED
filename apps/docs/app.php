@@ -141,7 +141,7 @@ $meta['title'] = 'Documentation | QED';
         In normal procedural PHP, every page is a separate file in the root folder (<code class="px-1.5 py-0.5 rounded bg-zinc-800 text-emerald-400 text-xs">tasks.php</code>, <code class="px-1.5 py-0.5 rounded bg-zinc-800 text-emerald-400 text-xs">edit_task.php?id=5</code>), and you have to manually <code class="px-1.5 py-0.5 rounded bg-zinc-800 text-emerald-400 text-xs">require 'config.php'</code> and <code class="px-1.5 py-0.5 rounded bg-zinc-800 text-emerald-400 text-xs">include 'header.php'</code> at the top of every single file. If you try to redirect or set a 404 status after <code class="px-1.5 py-0.5 rounded bg-zinc-800 text-emerald-400 text-xs">header.php</code> is included, PHP throws the <code class="px-1.5 py-0.5 rounded bg-zinc-800 text-red-400 text-xs">"Cannot modify header information - headers already sent"</code> warning.
       </p>
       <p class="text-zinc-300">
-        Here is how Q.E.D handles common tasks compared to normal PHP and Next.js:
+        Here is how QED handles common tasks compared to normal PHP and Next.js:
       </p>
       <div class="bg-zinc-900/60 border border-zinc-800 rounded-xl overflow-x-auto">
         <table class="w-full text-left border-collapse text-sm">
@@ -296,7 +296,7 @@ $meta['title'] = 'Documentation | QED';
             &lt;h1&gt;&lt;?php echo htmlspecialchars($user['username'], ENT_QUOTES, 'UTF-8'); ?&gt;&lt;/h1&gt;
             &lt;p&gt;&lt;?php echo htmlspecialchars($user['bio'], ENT_QUOTES, 'UTF-8'); ?&gt;&lt;/p&gt;
             &lt;?php include __DIR__ . '/includes/footer.php'; ?&gt;</code></pre>
-      <h3 class="mt-2 text-xl font-bold text-white">In Q.E.D (<code>apps/users/[id]/app.php</code>):</h3>
+      <h3 class="mt-2 text-xl font-bold text-white">In QED (<code>apps/users/[id]/app.php</code>):</h3>
       <p class="font-bold text-white text-sm">Normal PHP (<code>profile.php?id=10</code>):</p>
       <pre class="px-4 py-2 rounded-xl bg-zinc-950 border border-zinc-800 text-xs text-zinc-200 overflow-x-auto">
         <code class="bg-transparent">&lt;?php
@@ -377,7 +377,7 @@ QED/
         <li>
           Clone the repository into your Apache root (e.g., <code>C:\xampp\htdocs\QED</code>).
           <ul class="list-disc pl-6 mt-1 text-zinc-400">
-            <li><em>Note:</em> If you host Q.E.D at the main domain root (<code>/</code>) instead of <code>/qed</code>, change <code>$base_path = '';</code> in <a href="https://github.com/Qwidio/QED/blob/main/config.php" target="_blank" rel="noopener noreferrer" class="text-emerald-400 underline">config.php</a>.</li>
+            <li><em>Note:</em> If you host QED at the main domain root (<code>/</code>) instead of <code>/qed</code>, change <code>$base_path = '';</code> in <a href="https://github.com/Qwidio/QED/blob/main/config.php" target="_blank" rel="noopener noreferrer" class="text-emerald-400 underline">config.php</a>.</li>
           </ul>
         </li>
         <li>Copy <code>.env.example</code> to <code>.env</code> and fill in your database settings (<code>DB_HOST</code>, <code>DB_USER</code>, <code>DB_PASS</code>, <code>DB_NAME</code>).</li>
@@ -570,7 +570,7 @@ QED/
           <code class="bg-transparent">
 &lt;?php
 declare(strict_types=1);
-$meta['title'] = 'Tasks — Q.E.D';
+$meta['title'] = 'Tasks — QED';
 $error = null;
 
 // --- CREATE (POST /qed/tasks) ---
@@ -607,7 +607,7 @@ $tasks = DB::query('SELECT * FROM tasks ORDER BY id DESC')-&gt;fetch_all(MYSQLI_
         &lt;?= csrf_field() ?&gt;
         &lt;div class="flex flex-col gap-[5px]"&gt;
             &lt;label for="title" class="text-[13px] text-[rgba(255,255,255,0.737)]"&gt;Task Title&lt;/label&gt;
-            &lt;input id="title" type="text" name="title" placeholder="Finish Q.E.D docs" required
+            &lt;input id="title" type="text" name="title" placeholder="Finish QED docs" required
                    class="p-[7px] rounded-[10px] text-black bg-white"&gt;
         &lt;/div&gt;
         &lt;div class="flex flex-col gap-[5px]"&gt;

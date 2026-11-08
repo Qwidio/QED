@@ -1,3 +1,6 @@
+# Project Journals
+Where I write most of this project development journey and explanation of the decision making made on thia project. I'll try to make this readable for anyone but don't take my word for it
+
 ## 5/11/26 - making it become more like Next.js
 I went through lots of docs[(see the references.md)](https://github.com/Qwidio/QED/blob/main/README.md) just to make it actually work like a simpler PHP version of Nextjs without making it easy to exploit. some incomplete and missing things were like below:
   * The router was still a manual list: 
@@ -38,10 +41,11 @@ Added two short rewrite rules in [`.htaccess`](https://github.com/Qwidio/QED/blo
 ### Updated `documentation.md`: 
 Added the new `public_asset()` and `script_asset()` helpers and `.htaccess` rules into the main documentation so everything stays in sync.
 
-## 6/11/26 - tailwinded
-Since the other old time I like to style pages with tailwinds like styling but unlike tailwind, I made the classnames myself which is also inefficient use of time. that's why when finding out tailwind exists I've been wanting to use it on all my projects and now I did, it's never been more easier for me to style pages as much as I liked :D
+## 6/11/26 - 8/11/26, tailwinded
+Since some long ago I tend to style pages like tailwinds but instead of using the library/framework, I made the classnames myself which is also inefficient use of time as at that time I wasn't aware of it's existence. that's why when finding out tailwind exists I've been wanting to use it on all my projects but limited to the spaghetti CGCC is being riddled with and thankfully now I did implement it with this projects, it's never been more easier for me to style pages as much as I liked :D <br>
+I warn that it has become more apparent that my journaling quality dropped once I run out of technical things to say, I'm sorry to anyone actually reading this
 
-### installed tailwinds with nodejs
+### Installed tailwinds with nodejs
 Like been said before, I've also enable the tailwinds syntax highlighting with this `.vscode/settings.json` setup:
 ```json
 {
@@ -65,4 +69,11 @@ Like been said before, I've also enable the tailwinds syntax highlighting with t
 either copypaste it directly or update your settings.json with this if you want to enable it 
 
 ### updated docs
-well yeah ofcourse it needs to be updated, I've also include some of the guide on the readme because why not
+Updating the part with the tailwind, done rewritting the wording that unneededly too AI worded. Idk if I'm myself can change the wording without making it unreadable, so far still ok but needs sanity checks. extra note, I'd removed the core file reference segment because I figured I can just open the github history if I need to lookup for it.
+
+### minimizing the code
+This project/repo wasn't originally planned to be like this, it was actually going to be mixed on my larger projects(it didn't have name yet) here directly. But given how much potential this can be as standalone project, I decided that the larger projects will be using a new repository using this projects as the foundation before cutting off and developed separately.
+And also that I'm using the tailwinds means converting from my previous css styling will be herendous so that's also be one of the reason.
+
+### made the docs page
+Not just converting from the markdown but also actually reworded and rewritten the docs itself to be AIless or smt, Takes more time than I would like as it usually goes as I do updates both the page and markdown version as I feel like I won't touch the docs in a long time after this much documenting the projects.
