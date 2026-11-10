@@ -64,7 +64,7 @@ Hopefuly this is actually useful
 | **Load a component from `components/`** | `<?php component('task-card', ['task' => $task, 'base_path' => $base_path]); ?>` |
 
 ## Credits
-  [CGCC](https://github.com/Qwidio/CrossGate-Community-Collection) by [QWIDIO(in other words ME)](https://github.com/cure53/DOMPurify) used for readme & docs writing references<br>
+  [CGCC](https://github.com/Qwidio/CrossGate-Community-Collection) by [QWIDIO(in other words ME)](https://github.com/Qwidio) used for readme & docs writing references<br>
 
 ## License
   Distributed under the Apache 2.0 License. See [LICENSE](./LICENSE) for details.
