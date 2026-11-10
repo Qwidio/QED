@@ -71,7 +71,7 @@ function components(string $name, array $props = []): void {
   }
   $baseDir = realpath(__DIR__ . '/components');
   $target  = realpath(__DIR__ . '/components/' . $name . '.php');
-  if (!$baseDir || !$target || !str_starts_with($target, $baseDir, DIRECTORY_SEPARATOR)) {
+  if (!$baseDir || !$target || !str_starts_with($target, $baseDir . DIRECTORY_SEPARATOR)) {
     throw new \RuntimeException("Component not found: {$name}");
   }
   (static function (string $__file, array $__props): void {
