@@ -76,7 +76,7 @@ if ($match && $match['type'] === 'api') {
   $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
   if (is_array($handlers) && isset($handlers[$method]) && is_callable($handlers[$method])) {
     $response = $handlers[$method]($params);
-    echo json_decode($response, JSON_THROW_ON_ERROR);
+    echo json_encode($response, JSON_UNESCAPED_SLASHES | JSON_THROW_ON_ERROR);
     exit;
   }
   http_response_code(405);
